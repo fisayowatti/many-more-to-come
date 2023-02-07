@@ -26,6 +26,9 @@ export default function MusicPlayer() {
 
   useEffect(() => {
     loadSong(songs[songIndex]);
+    setTimeout(() => {
+      playSong();
+    }, 2000);
   }, []);
 
   function getPreferredSongTitle(title) {
